@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Sitio Personal</h1>
+        <nav>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#horario">Horario</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="perfil">
+            <img src="/src/images/yo.jpg" alt="Mi foto personal" id="foto-perfil">
+            <p>¡Hola! Soy Leonardo Barraza. Bienvenido a mi sitio web personal.</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="https://github.com/LeoBarraza0" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Twitter</a>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Mis Hobbies</h2>
+        <ul>
+            <li>Programación</li>
+            <li>Lectura</li>
+            <li>Fotografía</li>
+            <li>Viajes</li>
+        </ul>
+
+        <h3>Tareas Prioritarias</h3>
+        <ol>
+            <li>Completar proyecto web</li>
+            <li>Estudiar nuevas tecnologías</li>
+            <li>Ejercicio diario</li>
+        </ol>
+    </section>
+
+    <section id="horario">
+        <h2>Mi Horario Universitario</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:00 - 9:00</td>
+                    <td>Programación Avanzada</td>
+                    <td>Bases de Datos</td>
+                    <td>Estructuras de Datos</td>
+                    <td>Redes</td>
+                    <td>Sistemas Operativos</td>
+                </tr>
+                <tr>
+                    <td>9:00 - 11:00</td>
+                    <td>Matemáticas Discretas</td>
+                    <td>Ingeniería de Software</td>
+                    <td>Programación Avanzada</td>
+                    <td>Bases de Datos</td>
+                    <td>Proyecto Integrador</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 13:00</td>
+                    <td>Almuerzo/Estudio</td>
+                    <td>Almuerzo/Estudio</td>
+                    <td>Almuerzo/Estudio</td>
+                    <td>Almuerzo/Estudio</td>
+                    <td>Almuerzo/Estudio</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Laboratorio de Programación</td>
+                    <td>Proyecto Personal</td>
+                    <td>Laboratorio de Redes</td>
+                    <td>Proyecto Personal</td>
+                    <td>Club de Programación</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 17:00</td>
+                    <td>Estudio Individual</td>
+                    <td>Grupo de Estudio</td>
+                    <td>Práctica Coding</td>
+                    <td>Grupo de Estudio</td>
+                    <td>Hackathon/Libre</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="trabajo">Propuesta laboral</option>
+                    <option value="proyecto">Proyecto</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="/src/scripts/script.js"></script>
+</body>
+</html> 
